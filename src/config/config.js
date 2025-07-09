@@ -7,7 +7,7 @@ module.exports = {
   env: process.env.NODE_ENV || 'development',
   uploadDir: path.join(__dirname, '../../uploads'),
   backgroundDir: path.join(__dirname, '../../backgrounds'),
-  publicUrl: process.env.PUBLIC_URL || 'https://quiz-app-server-2-wmpr.onrender.com',
+  publicUrl:  'https://quiz-app-server-2-wmpr.onrender.com',
   jwt: {
     accessTokenSecret: process.env.JWT_ACCESS_SECRET,
     refreshTokenSecret: process.env.JWT_REFRESH_SECRET,
