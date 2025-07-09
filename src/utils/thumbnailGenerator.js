@@ -5,6 +5,6 @@ const generateThumbnail = () => {
   const randomIndex = Math.floor(Math.random() * images.length)
   const randomImage = images[randomIndex];
 
-  return 'https://quiz-app-server-2-wmpr.onrender.com/' + "/images/" + randomImage;
+  return 'https://quiz-app-server-2-wmpr.onrender.com' + "/images/" + randomImage;
 }
 module.exports = { generateThumbnail }
