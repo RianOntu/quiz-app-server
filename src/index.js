@@ -2,6 +2,20 @@ require('dotenv').config()
 const app = require('./app')
 const sequelize = require('./config/database')
 const config = require('./config/config')
+const cors = require('cors')
+// Allow specific origin
+const allowedOrigins = ['https://assignment-05-jm6cqifes-rianontus-projects.vercel.app']
+
+app.use(cors({
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true)
+    } else {
+      callback(new Error('Not allowed by CORS'))
+    }
+  },
+  credentials: true // if you're using cookies or auth headers
+}))
 
 const startServer = async () => {
   try {
