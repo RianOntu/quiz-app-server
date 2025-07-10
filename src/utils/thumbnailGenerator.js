@@ -8,3 +8,4 @@ const generateThumbnail = () => {
   return 'https://quiz-app-server-2-wmpr.onrender.com' + "/images/" + randomImage;
 }
 module.exports = { generateThumbnail }
+
